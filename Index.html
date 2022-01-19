@@ -1,17 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Bootstrap Example</title>
+        <title>Mikkel Filtenborg CV</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!--<style>
+            body {
+              background-image: url('');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+            </style>-->
     </head>
     <body>
-        <div class="container">
-            <h1>My First Bootstrap Page</h1>
-            <p>This part is inside a .container class.</p>
-            <p>The container class provides a responsive fixed width container.</p>
-        </div>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-xxl">
+                <a href="#intro" class="navbar-brand">
+                    <span class="fw-bold text-secondary">
+                        MSF - CV
+                    </span>
+                </a>
+                <!--toggle for mobile navbar-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <!--navbar links-->
+            <div class="collapse navbar-collapse justify-content-ed align-center" 
+            id="main-nav">
+             <ul class="navbar-nav">
+                 <!--Work experience-->
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Work experience</a>
+                </li>
+                <!--Education-->
+                <li class="nav-item">
+                    <a href="#education" class="nav-link">Education</a>
+                </li>
+                <!--Contact-->
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact information</a>
+                </li>
+                <!--Qualificaions-->
+                <li class="nav-item">
+                    <a href="#qualification" class="nav-link">Qualifications</a>
+                </li>
+                <!--IT Skills-->
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">IT-Skills</a>
+                </li>
+            </ul>   
+            </div>
+            
+            </div>
+        </nav>
+        <!--Dark mode-->
+        <section id="intro">
+            <div class="container-lg">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-md-5 text-center text-md-start">
+                        <!--Name-->
+                        <h1>
+                            <div class="display-2">Curriculum Vitae</div>
+                            <div class="display-5 text-info">Mikkel Filtenborg</div>
+                        </h1>
+                        <!--Introduction-->
+                        <p class="lead my-4 text-muted">Introduction</p>
+                        <a href="#" class="btn btn-lg btn-outline-info rounded-pill">My LinkedIn</a>
+                    </div>
+                    <!--Image-->
+                    <div class="col-md-5 text-center d-none d-md-block">
+                    <img class="img-fluid" src="/Images/pfp.jpg" alt="Profile Image">
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Education-->
+        <!--Experience-->
+        <!--Skills-->
+        <!--Qualifications-->
     </body>
 </html>
