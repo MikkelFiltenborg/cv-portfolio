@@ -4,7 +4,9 @@
         <title>Mikkel Filtenborg CV</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
         <!--<style>
             body {
@@ -17,12 +19,11 @@
     </head>
     <body>
         <!--Navbar-->
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-md bg-info navbar-light">
             <div class="container-xxl">
                 <a href="#intro" class="navbar-brand">
-                    <span class="fw-bold text-secondary">
-                        MSF - CV
-                    </span>
+                    <i class="bi bi-person-circle"></i>
+                    <span class="fw-bold text-light">MSF - CV</span>
                 </a>
                 <!--toggle for mobile navbar-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
@@ -30,33 +31,32 @@
                 aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            <!--navbar links-->
-            <div class="collapse navbar-collapse justify-content-ed align-center" 
-            id="main-nav">
-             <ul class="navbar-nav">
-                 <!--Work experience-->
-                <li class="nav-item">
-                    <a href="#experience" class="nav-link">Work experience</a>
-                </li>
-                <!--Education-->
-                <li class="nav-item">
-                    <a href="#education" class="nav-link">Education</a>
-                </li>
-                <!--Contact-->
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact information</a>
-                </li>
-                <!--Qualificaions-->
-                <li class="nav-item">
-                    <a href="#qualification" class="nav-link">Qualifications</a>
-                </li>
-                <!--IT Skills-->
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">IT-Skills</a>
-                </li>
-            </ul>   
-            </div>
-            
+                <!--navbar links-->
+                <div class="collapse navbar-collapse justify-content-end align-center" 
+                id="main-nav">
+                    <ul class="navbar-nav">
+                        <!--IT Skills link-->
+                        <li class="nav-item">
+                            <a href="#IT-Skills" class="nav-link d-block text-light" data-bs-toggle="offcanvas" 
+                            role="button" aria-controls="sidebar">IT-Skills</a>
+                        </li>
+                        <!--Contact link-->
+                        <li class="nav-item">
+                            <a href="#Contact" class="nav-link d-bock text-light" data-bs-toggle="offcanvas" 
+                            role="button" aria-controls="sidebar">Contact</a>
+                        </li>
+                        <!--Education-->
+                        <li class="nav-item">
+                            <a href="#Education" class="nav-link d-block text-light" data-bs-toggle="offcanvas" 
+                            role="button" aria-controls="sidebar">Education</a>
+                        </li>
+                        <!--Experience-->
+                        <li class="nav-item">
+                            <a href="#Experience" class="nav-link d-block text-light" data-bs-toggle="offcanvas" 
+                            role="button" aria-controls="sidebar">Experience</a>
+                        </li>
+                    </ul>   
+                </div>
             </div>
         </nav>
         <!--Dark mode-->
@@ -70,21 +70,131 @@
                             <div class="display-5 text-info">Mikkel Filtenborg</div>
                         </h1>
                         <!--Introduction-->
-                        <p class="lead my-4 text-muted">Introduction</p>
-                        <a href="#" class="btn btn-lg btn-outline-info rounded-pill">My LinkedIn</a>
+                        <br>
+                        <p class="lead mt-4 display-6 text-center text-muted">About Me</p>
+                        <p class="ms-5">Description of me</p>
+                        <!--LinkedIn button-->
+                        <!--<a href="https://www.linkedin.com/in/mikkel-filtenborg-b17422170/" class="btn btn-lg btn-outline-info rounded-pill">My LinkedIn</a>-->
                     </div>
                     <!--Image-->
                     <div class="col-md-5 text-center d-none d-md-block">
-                    <img class="img-fluid" src="/Images/pfp.jpg" alt="Profile Image">
-                </div>
+                        <img class="img-fluid rounded my-5" src="/Images/pfp2.jpg" alt="Profile Image">
+                    </div>
                 </div>
             </div>
         </section>
-
+        <!--<section id="skills">
+            <div class="container-md">
+                <div class="row g-5 justify-content-around align-items-center">
+                    <div class="col-6 col-lg-4">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="accordion" id="skills">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-1">
+                                    <button class="accordion-button fw-bold text-primary" typer="button" data-bs-toggle="collapse" 
+                                    data-bs-target="#front" aria-expanded="true" 
+                                    aria-controls="front">Front End</button>
+                                </h2>
+                                <div id="front" class="accordion-collapse collapse" 
+                                aria-labelledby="heading-1" data-bs-parent="#skills">
+                                    <div class="acordion-body">
+                                        <p>My Front End IT-Skills</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion" id="skills">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading-2">
+                                    <button class="accordion-button fw-bold text-primary" typer="button" data-bs-toggle="collapse" 
+                                    data-bs-target="#back" aria-expanded="true" 
+                                    aria-controls="back">Back End</button>
+                                </h2>
+                                <div id="back" class="accordion-collapse collapse" 
+                                aria-labelledby="heading-2" data-bs-parent="#skills">
+                                    <div class="acordion-body">
+                                        <p>My Back End IT-Skills</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>-->
+        <!--IT-Skills-->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="IT-Skills" 
+        aria-labelledby="sidebar-label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title display-6" id="sidebar-label">IT-Skills</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" 
+                aria-label="close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p>List of my IT-Skills</p>
+            </div>
+        </div>
+        <!--Contact-->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="Contact" 
+        aria-labelledby="sidebar-label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title display-6"id="sidebar-label">Contact</h5>
+            </div>
+            <div class="offcanvas-body">
+                <div class="row justify-content-form">
+                    <div class="col-lg-10">
+                        <!--LinkedIn button-->
+                        <h1>
+                            <a href="https://www.linkedin.com/in/mikkel-filtenborg-b17422170/" class="text-primary bi bi-linkedin"></a>
+                        </h1>
+                        <!--GitHub button-->
+                        <h1>
+                            <a href="https://github.com/MikkelFiltenborg" class="text-dark bi bi-github"></a>
+                        </h1>
+                        <form>
+                            <!--email input-->
+                            <br>
+                            <label for="email" class="form-label">Email address:</label>
+                            <div class="mb4 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </span>
+                                <input type="text" class="form-control" id="email" placeholder="e.g. william@email.com">
+                            </div>
+                            <!--name input-->
+                            <br>
+                            <label for="name" class="form-label">Name:</label>
+                            <div class="mb4 input-group">
+                                <span class="input-group-text">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </span>
+                                <input type="text" class="form-control" id="name" placeholder="e.g. William">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--Education-->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="Education" 
+        aria-labelledby="sidebar-label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title display-6"id="sidebar-label">Education</h5>
+            </div>
+            <div class="offcanvas-body">
+                <p>What educations do I have</p>
+            </div>
+        </div>
         <!--Experience-->
-        <!--Skills-->
-        <!--Qualifications-->
-        <p class="style bold">wgfopnegbabgrjæo</p>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="Experience" 
+        aria-labelledby="sidebar-label">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title display-6"id="sidebar-label">Experience</h5>
+            </div>
+            <div class="offcanvas-body">
+                <p>What is my work experience</p>
+            </div>
+        </div>
     </body>
 </html>
