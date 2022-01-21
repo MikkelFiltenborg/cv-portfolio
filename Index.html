@@ -72,9 +72,7 @@
                         <!--Introduction-->
                         <br>
                         <p class="lead mt-4 display-6 text-center text-muted">About Me</p>
-                        <p class="ms-5">Description of me</p>
-                        <!--LinkedIn button-->
-                        <!--<a href="https://www.linkedin.com/in/mikkel-filtenborg-b17422170/" class="btn btn-lg btn-outline-info rounded-pill">My LinkedIn</a>-->
+                        <p class="ms-5">A description of me</p>
                     </div>
                     <!--Image-->
                     <div class="col-md-5 text-center d-none d-md-block">
@@ -92,7 +90,9 @@
                 aria-label="close"></button>
             </div>
             <div class="offcanvas-body">
+
                 <p>List of my IT-Skills</p>
+                
             </div>
         </div>
         <!--Contact-->
@@ -100,6 +100,8 @@
         aria-labelledby="sidebar-label">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title display-6"id="sidebar-label">Contact</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" 
+                aria-label="close"></button>
             </div>
             <div class="offcanvas-body">
                 <div class="row justify-content-form">
@@ -108,6 +110,7 @@
                         <h1>
                             <a href="https://www.linkedin.com/in/mikkel-filtenborg-b17422170/" class="text-primary bi bi-linkedin"></a>
                         </h1>
+                        <br>
                         <!--GitHub button-->
                         <h1>
                             <a href="https://github.com/MikkelFiltenborg" class="text-dark bi bi-github"></a>
@@ -115,21 +118,20 @@
                         <form>
                             <!--email input-->
                             <br>
-                            <label for="email" class="form-label">Email address:</label>
-                            <div class="mb4 input-group">
+                            <label for="email" class="form-label">Email</label>
+                            <div class="input-group">
                                 <span class="input-group-text">
-                                    <i class="bi bi-envelope-fill"></i>
+                                    <i class="bi bi-envelope-fill"> mikkelsfiltenborg@gmail.com</i>
                                 </span>
-                                <input type="text" class="form-control" id="email" placeholder="e.g. william@email.com">
+                                <!--<input type="text" class="form-control" id="email" placeholder="e.g. william@example.com">-->
                             </div>
                             <!--name input-->
                             <br>
-                            <label for="name" class="form-label">Name:</label>
-                            <div class="mb4 input-group">
+                            <label for="name" class="form-label">Phone</label>
+                            <div class="input-group">
                                 <span class="input-group-text">
-                                    <i class="bi bi-telephone-fill"></i>
+                                    <i class="bi bi-telephone-fill"> 23 74 55 83</i>
                                 </span>
-                                <input type="text" class="form-control" id="name" placeholder="e.g. William">
                             </div>
                         </form>
                     </div>
@@ -142,18 +144,93 @@
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title display-6"id="sidebar-label">Education</h5>
             </div>
-            <div class="offcanvas-body">
-                <p>What educations do I have</p>
+            <div class="offcanvas-body">                
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-bold">
+                        2022 - current
+                        <div class="fw-normal">
+                            Programmer.
+                            <sub class="text-info fw-bold">Ongoing</sub>
+                            <br>
+                            Techinial Education Copenhagen
+                            <div class="text-muted">
+                                Grade: 12
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item fw-bold">
+                        2019 - 2020
+                        <div class="fw-normal">
+                            Electrician
+                            <sub class="text-danger fw-bold">Interrupted</sub>
+                            <br>
+                            Roskilde Techincal School
+                            <div class="text-muted">
+                                Grade: 12
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item fw-bold">
+                        2014 - 2018
+                        <div class="fw-normal">
+                            Precision Engineer
+                            <sub class="text-success fw-bold">Complete</sub>
+                            <br>
+                            Techincal Education Copenhagen
+                            <div class="text-muted">
+                                Final Grade: 10
+                            </div>
+                        </div>
+                    </li>
+                    <p class="mt-3 text-body">Danish 7-point grades explaned to ETCS scale
+                        <br>
+                        <a href="https://eng.uvm.dk/general--themes-and-projects/7-point-grading-scale" class="text-muted">eng.uvm.dk</a>
+                    </p>
+                </ul>
             </div>
         </div>
         <!--Experience-->
         <div class="offcanvas offcanvas-start" tabindex="-1" id="Experience" 
         aria-labelledby="sidebar-label">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title display-6"id="sidebar-label">Experience</h5>
+                <h5 class="offcanvas-title display-6"id="sidebar-label">Work Experience</h5>
             </div>
             <div class="offcanvas-body">
-                <p>What is my work experience</p>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item fw-bold">
+                        2022 - current
+                        <div class="fw-normal">
+                            Programming student.
+                            <br>
+                            Techinial Education Copenhagen SKP
+                            <div class="text-muted">
+                                opgaver
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item fw-bold">
+                        2019 - 2020
+                        <div class="fw-normal">
+                            Electrician apprentice. 
+                            <br>
+                            Jeudan A/S
+                            <div class="text-muted">
+                                ansvar og opgaver
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item fw-bold">
+                        2015 - 2018
+                        <div class="fw-normal">
+                            Precision engineer apprentice.
+                            <br>
+                            Techincal Education Copenhagen SKP
+                            <div class="text-muted">
+                                ansvar og opgaver
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
     </body>
